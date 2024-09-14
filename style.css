@@ -1,0 +1,88 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    grid-template-rows: repeat(3, auto);   /* 3 rows with auto height */
+    grid-gap: 20px; /* Space between grid items */
+    padding: 20px;  /* Padding around the grid */
+}
+
+/* Style individual grid items */
+.grid-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.layout-container {
+    display: flex;
+}
+
+/* Styling for aside */
+.menu {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    padding: 16px;
+    background-color: rgb(16, 72, 55);
+    color: white;
+    text-align: center;
+    grid-area: header; /* NEW */
+   }
+
+   #nav-ul{
+    display: flex;
+    justify-content:space-around ;
+}
+body > header > nav > ul {
+   list-style: none; 
+   text-decoration: none;
+
+}
+
+#nav-ul >li{
+    padding: 8px;
+    margin: 16px;
+
+}
+
+.navbutton{ 
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+h2{
+    text-align: center;
+}
+
+body > footer {
+    background-color: rgb(16, 72, 55);  
+    display: flex;
+}
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+
+}
+
+#footer-ul > div> li{
+margin-left: 12px;
+}
+
+#footer-ul > div> li> a{
+    color: #fff;
+    text-decoration: none;
+}
